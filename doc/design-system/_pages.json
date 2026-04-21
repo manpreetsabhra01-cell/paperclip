@@ -1,0 +1,646 @@
+{
+  "generated_at": "2026-04-21T00:00:00Z",
+  "repo_sha": "a26e1288b627e82c554445732c7d844648e6b5e1",
+  "page_count": 50,
+  "method": "Import-graph extraction: 'from \"@/components/<name>\"' and relative imports. Top-level JSX tree not parsed \u2014 import set is the proxy for rendered-components set. Components a page imports but never renders would inflate the count slightly; low risk here given app style.",
+  "pages": {
+    "Activity": {
+      "path": "ui/src/pages/Activity.tsx",
+      "components_imported": [
+        "ActivityRow",
+        "EmptyState",
+        "PageSkeleton",
+        "select"
+      ],
+      "component_count": 4
+    },
+    "AdapterManager": {
+      "path": "ui/src/pages/AdapterManager.tsx",
+      "components_imported": [
+        "PathInstructionsModal",
+        "badge",
+        "button",
+        "card",
+        "dialog",
+        "input",
+        "label"
+      ],
+      "component_count": 7
+    },
+    "AgentDetail": {
+      "path": "ui/src/pages/AgentDetail.tsx",
+      "components_imported": [
+        "ActivityCharts",
+        "AgentActionButtons",
+        "AgentConfigForm",
+        "AgentIconPicker",
+        "BudgetPolicyCard",
+        "CopyText",
+        "EntityRow",
+        "Identity",
+        "MarkdownBody",
+        "MarkdownEditor",
+        "PackageFileTree",
+        "PageSkeleton",
+        "PageTabBar",
+        "RunTranscriptView",
+        "ScrollToBottom",
+        "StatusBadge",
+        "agent-config-primitives",
+        "button",
+        "collapsible",
+        "input",
+        "popover",
+        "skeleton",
+        "tabs",
+        "toggle-switch",
+        "tooltip"
+      ],
+      "component_count": 25
+    },
+    "Agents": {
+      "path": "ui/src/pages/Agents.tsx",
+      "components_imported": [
+        "EmptyState",
+        "EntityRow",
+        "PageSkeleton",
+        "PageTabBar",
+        "StatusBadge",
+        "button",
+        "tabs"
+      ],
+      "component_count": 7
+    },
+    "ApprovalDetail": {
+      "path": "ui/src/pages/ApprovalDetail.tsx",
+      "components_imported": [
+        "ApprovalPayload",
+        "Identity",
+        "MarkdownBody",
+        "PageSkeleton",
+        "StatusBadge",
+        "button",
+        "textarea"
+      ],
+      "component_count": 7
+    },
+    "Approvals": {
+      "path": "ui/src/pages/Approvals.tsx",
+      "components_imported": [
+        "ApprovalCard",
+        "PageSkeleton",
+        "PageTabBar",
+        "tabs"
+      ],
+      "component_count": 4
+    },
+    "Auth": {
+      "path": "ui/src/pages/Auth.tsx",
+      "components_imported": [
+        "AsciiArtAnimation",
+        "button"
+      ],
+      "component_count": 2
+    },
+    "BoardClaim": {
+      "path": "ui/src/pages/BoardClaim.tsx",
+      "components_imported": [
+        "button"
+      ],
+      "component_count": 1
+    },
+    "CliAuth": {
+      "path": "ui/src/pages/CliAuth.tsx",
+      "components_imported": [
+        "button"
+      ],
+      "component_count": 1
+    },
+    "Companies": {
+      "path": "ui/src/pages/Companies.tsx",
+      "components_imported": [
+        "button",
+        "dropdown-menu",
+        "input"
+      ],
+      "component_count": 3
+    },
+    "CompanyAccess": {
+      "path": "ui/src/pages/CompanyAccess.tsx",
+      "components_imported": [
+        "badge",
+        "button",
+        "checkbox",
+        "dialog"
+      ],
+      "component_count": 4
+    },
+    "CompanyExport": {
+      "path": "ui/src/pages/CompanyExport.tsx",
+      "components_imported": [
+        "EmptyState",
+        "MarkdownBody",
+        "PackageFileTree",
+        "PageSkeleton",
+        "button"
+      ],
+      "component_count": 5
+    },
+    "CompanyImport": {
+      "path": "ui/src/pages/CompanyImport.tsx",
+      "components_imported": [
+        "AgentConfigForm",
+        "EmptyState",
+        "MarkdownBody",
+        "PackageFileTree",
+        "agent-config-defaults",
+        "agent-config-primitives",
+        "button"
+      ],
+      "component_count": 7
+    },
+    "CompanyInvites": {
+      "path": "ui/src/pages/CompanyInvites.tsx",
+      "components_imported": [
+        "button"
+      ],
+      "component_count": 1
+    },
+    "CompanySettings": {
+      "path": "ui/src/pages/CompanySettings.tsx",
+      "components_imported": [
+        "CompanyPatternIcon",
+        "agent-config-primitives",
+        "button"
+      ],
+      "component_count": 3
+    },
+    "CompanySkills": {
+      "path": "ui/src/pages/CompanySkills.tsx",
+      "components_imported": [
+        "EmptyState",
+        "MarkdownBody",
+        "MarkdownEditor",
+        "PageSkeleton",
+        "button",
+        "dialog",
+        "input",
+        "textarea",
+        "tooltip"
+      ],
+      "component_count": 9
+    },
+    "Costs": {
+      "path": "ui/src/pages/Costs.tsx",
+      "components_imported": [
+        "BillerSpendCard",
+        "BudgetIncidentCard",
+        "BudgetPolicyCard",
+        "EmptyState",
+        "FinanceBillerCard",
+        "FinanceKindCard",
+        "FinanceTimelineCard",
+        "Identity",
+        "PageSkeleton",
+        "PageTabBar",
+        "ProviderQuotaCard",
+        "StatusBadge",
+        "button",
+        "card",
+        "tabs"
+      ],
+      "component_count": 15
+    },
+    "Dashboard": {
+      "path": "ui/src/pages/Dashboard.tsx",
+      "components_imported": [
+        "ActiveAgentsPanel",
+        "ActivityCharts",
+        "ActivityRow",
+        "EmptyState",
+        "Identity",
+        "MetricCard",
+        "PageSkeleton",
+        "StatusIcon"
+      ],
+      "component_count": 8
+    },
+    "DesignGuide": {
+      "path": "ui/src/pages/DesignGuide.tsx",
+      "components_imported": [
+        "EmptyState",
+        "EntityRow",
+        "FilterBar",
+        "Identity",
+        "InlineEditor",
+        "IssueReferencePill",
+        "MetricCard",
+        "PageSkeleton",
+        "PriorityIcon",
+        "StatusBadge",
+        "StatusIcon",
+        "avatar",
+        "badge",
+        "breadcrumb",
+        "button",
+        "card",
+        "checkbox",
+        "collapsible",
+        "command",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "label",
+        "popover",
+        "scroll-area",
+        "select",
+        "separator",
+        "sheet",
+        "skeleton",
+        "tabs",
+        "textarea",
+        "tooltip"
+      ],
+      "component_count": 32
+    },
+    "ExecutionWorkspaceDetail": {
+      "path": "ui/src/pages/ExecutionWorkspaceDetail.tsx",
+      "components_imported": [
+        "CopyText",
+        "ExecutionWorkspaceCloseDialog",
+        "IssuesList",
+        "PageTabBar",
+        "WorkspaceRuntimeControls",
+        "button",
+        "card",
+        "input",
+        "separator",
+        "tabs",
+        "textarea"
+      ],
+      "component_count": 11
+    },
+    "GoalDetail": {
+      "path": "ui/src/pages/GoalDetail.tsx",
+      "components_imported": [
+        "EntityRow",
+        "GoalProperties",
+        "GoalTree",
+        "InlineEditor",
+        "PageSkeleton",
+        "StatusBadge",
+        "button",
+        "tabs"
+      ],
+      "component_count": 8
+    },
+    "Goals": {
+      "path": "ui/src/pages/Goals.tsx",
+      "components_imported": [
+        "EmptyState",
+        "GoalTree",
+        "PageSkeleton",
+        "button"
+      ],
+      "component_count": 4
+    },
+    "Inbox": {
+      "path": "ui/src/pages/Inbox.tsx",
+      "components_imported": [
+        "ApprovalPayload",
+        "EmptyState",
+        "IssueColumns",
+        "IssueFiltersPopover",
+        "IssueGroupHeader",
+        "IssueRow",
+        "PageSkeleton",
+        "PageTabBar",
+        "StatusBadge",
+        "StatusIcon",
+        "SwipeToArchive",
+        "button",
+        "dialog",
+        "input",
+        "popover",
+        "select",
+        "separator",
+        "tabs"
+      ],
+      "component_count": 18
+    },
+    "InstanceAccess": {
+      "path": "ui/src/pages/InstanceAccess.tsx",
+      "components_imported": [
+        "button",
+        "checkbox"
+      ],
+      "component_count": 2
+    },
+    "InstanceExperimentalSettings": {
+      "path": "ui/src/pages/InstanceExperimentalSettings.tsx",
+      "components_imported": [
+        "toggle-switch"
+      ],
+      "component_count": 1
+    },
+    "InstanceGeneralSettings": {
+      "path": "ui/src/pages/InstanceGeneralSettings.tsx",
+      "components_imported": [
+        "ModeBadge",
+        "button",
+        "toggle-switch"
+      ],
+      "component_count": 3
+    },
+    "InstanceSettings": {
+      "path": "ui/src/pages/InstanceSettings.tsx",
+      "components_imported": [
+        "EmptyState",
+        "badge",
+        "button",
+        "card"
+      ],
+      "component_count": 4
+    },
+    "InviteLanding": {
+      "path": "ui/src/pages/InviteLanding.tsx",
+      "components_imported": [
+        "CompanyPatternIcon",
+        "button"
+      ],
+      "component_count": 2
+    },
+    "InviteUxLab": {
+      "path": "ui/src/pages/InviteUxLab.tsx",
+      "components_imported": [
+        "CompanyPatternIcon",
+        "badge",
+        "button",
+        "card"
+      ],
+      "component_count": 4
+    },
+    "IssueChatUxLab": {
+      "path": "ui/src/pages/IssueChatUxLab.tsx",
+      "components_imported": [
+        "IssueChatThread",
+        "badge",
+        "button",
+        "card"
+      ],
+      "component_count": 4
+    },
+    "IssueDetail": {
+      "path": "ui/src/pages/IssueDetail.tsx",
+      "components_imported": [
+        "ApprovalCard",
+        "Identity",
+        "ImageGalleryModal",
+        "InlineEditor",
+        "IssueChatThread",
+        "IssueContinuationHandoff",
+        "IssueDocumentsSection",
+        "IssueProperties",
+        "IssueReferenceActivitySummary",
+        "IssueRelatedWorkPanel",
+        "IssueRunLedger",
+        "IssueWorkspaceCard",
+        "IssuesList",
+        "MarkdownEditor",
+        "PriorityIcon",
+        "ScrollToBottom",
+        "StatusIcon",
+        "button",
+        "popover",
+        "scroll-area",
+        "separator",
+        "sheet",
+        "skeleton",
+        "tabs"
+      ],
+      "component_count": 24
+    },
+    "Issues": {
+      "path": "ui/src/pages/Issues.tsx",
+      "components_imported": [
+        "EmptyState",
+        "IssuesList"
+      ],
+      "component_count": 2
+    },
+    "JoinRequestQueue": {
+      "path": "ui/src/pages/JoinRequestQueue.tsx",
+      "components_imported": [
+        "badge",
+        "button"
+      ],
+      "component_count": 2
+    },
+    "MyIssues": {
+      "path": "ui/src/pages/MyIssues.tsx",
+      "components_imported": [
+        "EmptyState",
+        "EntityRow",
+        "PageSkeleton",
+        "StatusIcon"
+      ],
+      "component_count": 4
+    },
+    "NewAgent": {
+      "path": "ui/src/pages/NewAgent.tsx",
+      "components_imported": [
+        "AgentConfigForm",
+        "ReportsToPicker",
+        "agent-config-defaults",
+        "agent-config-primitives",
+        "button",
+        "checkbox",
+        "popover"
+      ],
+      "component_count": 7
+    },
+    "NotFound": {
+      "path": "ui/src/pages/NotFound.tsx",
+      "components_imported": [
+        "button"
+      ],
+      "component_count": 1
+    },
+    "Org": {
+      "path": "ui/src/pages/Org.tsx",
+      "components_imported": [
+        "EmptyState",
+        "PageSkeleton",
+        "StatusBadge"
+      ],
+      "component_count": 3
+    },
+    "OrgChart": {
+      "path": "ui/src/pages/OrgChart.tsx",
+      "components_imported": [
+        "AgentIconPicker",
+        "EmptyState",
+        "PageSkeleton",
+        "button"
+      ],
+      "component_count": 4
+    },
+    "PluginManager": {
+      "path": "ui/src/pages/PluginManager.tsx",
+      "components_imported": [
+        "badge",
+        "button",
+        "card",
+        "dialog",
+        "input",
+        "label"
+      ],
+      "component_count": 6
+    },
+    "PluginPage": {
+      "path": "ui/src/pages/PluginPage.tsx",
+      "components_imported": [
+        "button"
+      ],
+      "component_count": 1
+    },
+    "PluginSettings": {
+      "path": "ui/src/pages/PluginSettings.tsx",
+      "components_imported": [
+        "JsonSchemaForm",
+        "PageTabBar",
+        "badge",
+        "button",
+        "card",
+        "separator",
+        "tabs"
+      ],
+      "component_count": 7
+    },
+    "ProfileSettings": {
+      "path": "ui/src/pages/ProfileSettings.tsx",
+      "components_imported": [
+        "avatar",
+        "button",
+        "input",
+        "label"
+      ],
+      "component_count": 4
+    },
+    "ProjectDetail": {
+      "path": "ui/src/pages/ProjectDetail.tsx",
+      "components_imported": [
+        "BudgetPolicyCard",
+        "InlineEditor",
+        "IssuesList",
+        "PageSkeleton",
+        "PageTabBar",
+        "ProjectProperties",
+        "ProjectWorkspacesContent",
+        "StatusBadge",
+        "button",
+        "tabs"
+      ],
+      "component_count": 10
+    },
+    "ProjectWorkspaceDetail": {
+      "path": "ui/src/pages/ProjectWorkspaceDetail.tsx",
+      "components_imported": [
+        "PathInstructionsModal",
+        "WorkspaceRuntimeControls",
+        "button",
+        "separator"
+      ],
+      "component_count": 4
+    },
+    "Projects": {
+      "path": "ui/src/pages/Projects.tsx",
+      "components_imported": [
+        "EmptyState",
+        "EntityRow",
+        "PageSkeleton",
+        "StatusBadge",
+        "button"
+      ],
+      "component_count": 5
+    },
+    "RoutineDetail": {
+      "path": "ui/src/pages/RoutineDetail.tsx",
+      "components_imported": [
+        "AgentActionButtons",
+        "AgentIconPicker",
+        "EmptyState",
+        "InlineEntitySelector",
+        "LiveRunWidget",
+        "MarkdownEditor",
+        "PageSkeleton",
+        "RoutineRunVariablesDialog",
+        "RoutineVariablesEditor",
+        "ScheduleEditor",
+        "badge",
+        "button",
+        "collapsible",
+        "input",
+        "label",
+        "select",
+        "separator",
+        "tabs",
+        "toggle-switch"
+      ],
+      "component_count": 19
+    },
+    "Routines": {
+      "path": "ui/src/pages/Routines.tsx",
+      "components_imported": [
+        "AgentIconPicker",
+        "EmptyState",
+        "InlineEntitySelector",
+        "IssuesList",
+        "MarkdownEditor",
+        "PageSkeleton",
+        "PageTabBar",
+        "RoutineRunVariablesDialog",
+        "RoutineVariablesEditor",
+        "button",
+        "card",
+        "collapsible",
+        "dialog",
+        "dropdown-menu",
+        "popover",
+        "select",
+        "tabs",
+        "toggle-switch"
+      ],
+      "component_count": 18
+    },
+    "RunTranscriptUxLab": {
+      "path": "ui/src/pages/RunTranscriptUxLab.tsx",
+      "components_imported": [
+        "Identity",
+        "RunTranscriptView",
+        "StatusBadge",
+        "badge",
+        "button"
+      ],
+      "component_count": 5
+    },
+    "UserProfile": {
+      "path": "ui/src/pages/UserProfile.tsx",
+      "components_imported": [
+        "EmptyState",
+        "PageSkeleton",
+        "StatusBadge",
+        "avatar"
+      ],
+      "component_count": 4
+    },
+    "Workspaces": {
+      "path": "ui/src/pages/Workspaces.tsx",
+      "components_imported": [
+        "PageSkeleton",
+        "ProjectWorkspacesContent"
+      ],
+      "component_count": 2
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "generated_at": "2026-04-21T00:00:00Z",
+  "repo_sha": "a26e1288b627e82c554445732c7d844648e6b5e1",
+  "branch": "sockmonster-ds-extraction",
+  "styling": {
+    "tailwind_version": "v4",
+    "tailwind_config": null,
+    "tailwind_config_note": "No tailwind.config.* file. Tailwind v4 CSS-first config: theme is declared via @theme inline blocks in ui/src/index.css. Build integration via @tailwindcss/vite.",
+    "css_variables_file": "ui/src/index.css",
+    "uses_css_variables": true,
+    "uses_cva": true,
+    "uses_cn_helper": true,
+    "cn_helper_location": "ui/src/lib/utils.ts:6",
+    "shadcn_present": true,
+    "shadcn_style": "new-york",
+    "shadcn_base_color": "neutral",
+    "shadcn_css_variables": true,
+    "shadcn_rsc": false,
+    "shadcn_icon_library": "lucide",
+    "shadcn_aliases": {
+      "components": "@/components",
+      "ui": "@/components/ui",
+      "lib": "@/lib",
+      "hooks": "@/hooks",
+      "utils": "@/lib/utils"
+    },
+    "shadcn_skill_path": ".agents/skills/shadcn/SKILL.md",
+    "other_styling": [
+      {
+        "library": "@tailwindcss/typography",
+        "usage": "@plugin in ui/src/index.css; prose class styling for markdown"
+      }
+    ],
+    "notes": "Tailwind v4 with shadcn/ui in new-york style. components.json present. cn() = clsx + tailwind-merge. Custom @custom-variant dark (&:is(.dark *)). No tailwindcss-animate plugin."
+  },
+  "tokens": {
+    "color": {
+      "sources": ["ui/src/index.css"],
+      "authoritative_source": "ui/src/index.css",
+      "definition_blocks": [
+        { "block": "@theme inline", "role": "exposes --color-* aliases to Tailwind", "line_range": "6-43" },
+        { "block": ":root", "role": "authoritative light-mode values", "line_range": "45-80" },
+        { "block": ".dark", "role": "dark-mode overrides", "line_range": "82-115" }
+      ],
+      "count_estimate": 32,
+      "categories": {
+        "semantic_neutral_and_intent": [
+          "background", "foreground", "card", "card-foreground", "popover", "popover-foreground",
+          "primary", "primary-foreground", "secondary", "secondary-foreground",
+          "muted", "muted-foreground", "accent", "accent-foreground",
+          "destructive", "destructive-foreground",
+          "border", "input", "ring"
+        ],
+        "chart": ["chart-1", "chart-2", "chart-3", "chart-4", "chart-5"],
+        "sidebar": [
+          "sidebar", "sidebar-foreground",
+          "sidebar-primary", "sidebar-primary-foreground",
+          "sidebar-accent", "sidebar-accent-foreground",
+          "sidebar-border", "sidebar-ring"
+        ]
+      },
+      "includes_signal_green": false,
+      "value_format": "oklch",
+      "dark_mode_convention": ".dark class selector via @custom-variant"
+    },
+    "spacing": {
+      "sources": [],
+      "authoritative_source": null,
+      "count_estimate": 0,
+      "note": "No project-local spacing tokens. Spacing uses Tailwind v4 defaults inherited from tailwindcss package."
+    },
+    "type": {
+      "sources": [],
+      "authoritative_source": null,
+      "count_estimate": 0,
+      "font_faces": [],
+      "google_fonts": [],
+      "note": "No project-local font/type tokens. Typography uses Tailwind v4 defaults + @tailwindcss/typography plugin. Markdown styling via `.paperclip-markdown` and `.paperclip-mdxeditor-content` classes with hardcoded font-size/line-height values in index.css."
+    },
+    "radius": {
+      "sources": ["ui/src/index.css"],
+      "authoritative_source": "ui/src/index.css",
+      "count_estimate": 5,
+      "tokens": [
+        { "name": "--radius", "value": "0", "defined_at": "ui/src/index.css:47", "scope": ":root" },
+        { "name": "--radius-sm", "value": "0.375rem", "defined_at": "ui/src/index.css:39", "scope": "@theme" },
+        { "name": "--radius-md", "value": "0.5rem", "defined_at": "ui/src/index.css:40", "scope": "@theme" },
+        { "name": "--radius-lg", "value": "0px", "defined_at": "ui/src/index.css:41", "scope": "@theme" },
+        { "name": "--radius-xl", "value": "0px", "defined_at": "ui/src/index.css:42", "scope": "@theme" }
+      ],
+      "note": "Unusual: --radius-lg and --radius-xl are 0px while --radius-sm and --radius-md are non-zero. Likely intentional flat-design choice at the outer scale, but worth confirming. Also --radius (base, :root) = 0 used by MDXEditor integration; not part of @theme."
+    },
+    "motion": {
+      "sources": ["ui/src/index.css"],
+      "authoritative_source": null,
+      "count_estimate": 0,
+      "css_variable_tokens": [],
+      "keyframes": [
+        { "name": "dashboard-activity-enter", "defined_at": "ui/src/index.css:228" },
+        { "name": "dashboard-activity-highlight", "defined_at": "ui/src/index.css:246" },
+        { "name": "cot-line-slide-in", "defined_at": "ui/src/index.css:272" },
+        { "name": "cot-line-slide-out", "defined_at": "ui/src/index.css:277" },
+        { "name": "shimmer-text-slide", "defined_at": "ui/src/index.css:298" }
+      ],
+      "tailwindcss_animate_plugin": false,
+      "note": "No --motion-* or --duration-* tokens. Motion is defined as inline @keyframes + inline cubic-bezier values (commonly cubic-bezier(0.16, 1, 0.3, 1) and cubic-bezier(0.4, 0, 0.2, 1)). prefers-reduced-motion respected."
+    },
+    "elevation": {
+      "sources": [],
+      "authoritative_source": null,
+      "count_estimate": 0,
+      "note": "No --shadow-* tokens and no theme.boxShadow. Project appears to avoid shadows as a design choice (borders and background shifts carry elevation). Verify during extraction by grepping for box-shadow usage in components."
+    },
+    "scoped_non_ds_variables": [
+      {
+        "group": "MDXEditor theme bridge",
+        "selector": ".paperclip-mdxeditor-scope, .paperclip-mdxeditor",
+        "line_range": "332-361",
+        "variable_count": 24,
+        "role": "Maps host DS tokens onto MDXEditor's internal token names (--baseBase, --accentSolid, etc.). Consumed alias layer, not authoritative DS tokens."
+      },
+      {
+        "group": "Shimmer text effect",
+        "selector": ".shimmer-text",
+        "variable_count": 2,
+        "role": "Component-local (--shimmer-base, --shimmer-highlight)."
+      }
+    ]
+  },
+  "components": {
+    "primary_root": "ui/src/components/",
+    "layout": "mixed",
+    "layout_notes": "Not purely flat and not purely nested. Subdirectories exist for a specific subset; the majority live flat at the top level. Naming convention for primitives is lowercase-kebab (button.tsx, dropdown-menu.tsx); composites/features use PascalCase (AgentConfigForm.tsx).",
+    "subdirectories": [
+      { "path": "ui/src/components/ui/", "role": "shadcn primitives", "file_count": 22 },
+      { "path": "ui/src/components/access/", "role": "access-control feature cluster", "file_count": 3 },
+      { "path": "ui/src/components/transcript/", "role": "run transcript feature cluster", "file_count": 2 }
+    ],
+    "top_level_tsx_count": 108,
+    "primitives_in_components_ui": [
+      "avatar", "badge", "breadcrumb", "button", "card", "checkbox", "collapsible",
+      "command", "dialog", "dropdown-menu", "input", "label", "popover",
+      "scroll-area", "select", "separator", "sheet", "skeleton", "tabs",
+      "textarea", "toggle-switch", "tooltip"
+    ],
+    "count_estimate": 133,
+    "plugin_sdk_components": {
+      "path": "packages/plugins/sdk/src/ui/components.ts",
+      "status": "ambient-types-only",
+      "count": 11,
+      "declared_components": [
+        "MetricCard", "StatusBadge", "DataTable", "TimeseriesChart", "MarkdownBlock",
+        "KeyValueList", "ActionBar", "LogView", "JsonTree", "Spinner", "ErrorBoundary"
+      ],
+      "runtime_model": "Host provides implementations via renderSdkUiComponent(name, props) runtime injection. Plugin bundles ship type declarations only.",
+      "name_collision_check": "MetricCard.tsx and StatusBadge.tsx exist at ui/src/components/ top-level. The other 9 declared components have no obvious matching file — may exist under different names (e.g., MarkdownBody ≈ MarkdownBlock, JsonSchemaForm unrelated) or may not be implemented yet."
+    }
+  },
+  "usage_surfaces": {
+    "pages_root": "ui/src/pages/",
+    "page_count_estimate": 50,
+    "page_count_method": "find ui/src/pages -name '*.tsx' -not -name '*.test.tsx'",
+    "other_surfaces": [
+      { "path": "ui/src/App.tsx", "role": "root router" },
+      { "path": "ui/src/plugins/", "role": "plugin slot & launcher rendering (slots.tsx, launchers.tsx)" }
+    ],
+    "notable_pages": {
+      "design_guide": "ui/src/pages/DesignGuide.tsx — an existing in-app design reference page. Imports shadcn primitives; worth cross-referencing during Stage 3 for intended-vs-actual primitive usage. Its presence means a partial DS narrative already exists in-code.",
+      "ux_labs": [
+        "ui/src/pages/InviteUxLab.tsx",
+        "ui/src/pages/IssueChatUxLab.tsx",
+        "ui/src/pages/RunTranscriptUxLab.tsx"
+      ]
+    }
+  },
+  "storybook": {
+    "present": true,
+    "version": "10.3.5",
+    "config_path": "ui/storybook/.storybook/main.ts",
+    "stories_location": "centralized",
+    "stories_glob": "ui/storybook/stories/**/*.stories.@(ts|tsx|mdx)",
+    "story_file_count": 14,
+    "story_organization": "thematic",
+    "story_organization_note": "Stories are organized by domain/theme (foundations, navigation-layout, dialogs-modals, chat-comments, forms-editors, status-language, data-viz-misc, agent-management, issue-management, projects-goals-workspaces, budget-finance, control-plane-surfaces, ux-labs, overview) — NOT one-story-per-component. A single .stories.tsx file typically imports and composes many components. 'Component covered by story' must be computed by parsing import graphs of story files, not by file naming.",
+    "story_files": [
+      "foundations.stories.tsx",
+      "overview.stories.tsx",
+      "status-language.stories.tsx",
+      "navigation-layout.stories.tsx",
+      "dialogs-modals.stories.tsx",
+      "forms-editors.stories.tsx",
+      "chat-comments.stories.tsx",
+      "data-viz-misc.stories.tsx",
+      "agent-management.stories.tsx",
+      "issue-management.stories.tsx",
+      "projects-goals-workspaces.stories.tsx",
+      "budget-finance.stories.tsx",
+      "control-plane-surfaces.stories.tsx",
+      "ux-labs.stories.tsx"
+    ],
+    "addons": ["@storybook/addon-docs", "@storybook/addon-a11y"],
+    "covered_components": null,
+    "covered_components_note": "Deferred to Stage 2 (parse story imports). Discovery only confirms stories exist, not per-component coverage."
+  },
+  "existing_docs": {
+    "design_system_dir_present": false,
+    "locations": [
+      { "path": "ui/README.md", "role": "package readme; non-DS" },
+      { "path": "ui/src/pages/DesignGuide.tsx", "role": "in-app design reference page (component-level showcase)" }
+    ],
+    "figma_sync_config": null,
+    "style_dictionary_config": null,
+    "tokens_studio_config": null
+  },
+  "known_gaps": [
+    "Plugin SDK UI is a types-only ambient bridge (packages/plugins/sdk/src/ui/components.ts). The host-provided component kit promised by the SDK is partial: only MetricCard and StatusBadge have matching host implementations by name. 9 other declared components (DataTable, TimeseriesChart, MarkdownBlock, KeyValueList, ActionBar, LogView, JsonTree, Spinner, ErrorBoundary) have no obvious host implementation. PLUGIN_SPEC.md:30 confirms: 'The current runtime does not yet ship a real host-provided plugin UI component kit'.",
+    "No dedicated spacing, type, or elevation tokens. Those categories rely on Tailwind v4 defaults. Extraction should not synthesize repo-specific tokens where none exist.",
+    "No central motion token language. Motion is expressed as per-feature @keyframes with inline easing. Treat motion as a candidate for future tokenization rather than documenting a current system.",
+    "No Figma/style-dictionary/tokens-studio integration. The design system is code-authored, not design-tool-synced."
+  ],
+  "uncertainties": [
+    "Storybook organization is thematic (14 composite stories), not per-component. The extraction skill's 'covered_by_story' signal needs to be computed by parsing each story file's import graph and surfacing components used inside render bodies. Flag before Stage 2 so the skill doesn't default to file-name matching.",
+    "Radius scale is non-monotonic: --radius-sm = 0.375rem, --radius-md = 0.5rem, --radius-lg = 0px, --radius-xl = 0px. Flat-design choice or stale values? Also --radius (base) = 0 at :root coexists with the @theme tokens; which is canonical for Tailwind rounded utilities? Worth confirming before Stage 1 drift analysis flags every rounded-lg usage.",
+    "Plugin SDK UI contracts 11 shared components but only 2 appear to be implemented by that name in ui/. For extraction scope, should we (a) treat the SDK declarations as DS contract and flag missing implementations as gaps, or (b) ignore the SDK and document only what exists in ui/? Recommendation: (a) — it's higher-value signal for the human reviewer.",
+    "ui/src/components/ has a mixed layout: 22 shadcn primitives in a 'ui/' subdirectory and 108 components flat at the top level. The top-level mix contains features, composites, one-off pages pieces, and true reusable patterns. Stage 3 will need a heuristic (composition-graph-based) rather than directory-based category inference.",
+    "Total component count (~133) is meaningfully larger than the skill's illustrative example (87). With the 3+-usage threshold for detail files, output should stay tractable, but the skill should confirm the threshold is right at this scale before Stage 3 starts generating per-component .md files.",
+    "MDXEditor CSS variable bridge (.paperclip-mdxeditor-scope, 24 --base*/--accent* variables) is DS-adjacent — it consumes host tokens and maps them to MDXEditor internals. Should Stage 1 include these in tokens.json? Recommendation: no — they are consumed aliases, not authoritative tokens. Flag them in tokens-review.md as 'integration layer' rather than as drift."
+  ]
+}

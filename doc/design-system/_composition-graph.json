@@ -1,0 +1,2767 @@
+{
+  "generated_at": "2026-04-21T00:00:00Z",
+  "repo_sha": "a26e1288b627e82c554445732c7d844648e6b5e1",
+  "total_components": 135,
+  "classification_method": "primitive = file lives in ui/src/components/ui/ (shadcn primitive); composite = imports 1+ other component from @/components/*; standalone = imports no other components; utility-or-hook = .ts file (not a React component).",
+  "status_method": "dead = 0 code imports and not in any Storybook story; storybook-only = 0 code imports but appears in a story file; below-threshold = 1-2 code imports (no dedicated detail file); documented = 3+ code imports (has dedicated detail file).",
+  "plugin_sdk_contracts": {
+    "note": "The plugin SDK declares 11 ambient types-only components at packages/plugins/sdk/src/ui/components.ts. Host provides implementations at runtime via renderSdkUiComponent.",
+    "components": [
+      {
+        "name": "MetricCard",
+        "implemented_in_host": "ui/src/components/MetricCard.tsx"
+      },
+      {
+        "name": "StatusBadge",
+        "implemented_in_host": "ui/src/components/StatusBadge.tsx"
+      },
+      {
+        "name": "DataTable",
+        "implemented_in_host": null,
+        "note": "No file named DataTable; potential substitutes: none obvious. Contract-only."
+      },
+      {
+        "name": "TimeseriesChart",
+        "implemented_in_host": null,
+        "note": "No file named TimeseriesChart; ActivityCharts.tsx covers timeseries but has a different API. Contract-only."
+      },
+      {
+        "name": "MarkdownBlock",
+        "implemented_in_host": null,
+        "note": "No file named MarkdownBlock; MarkdownBody.tsx is the host's markdown renderer but name differs. Contract-only (or rename)."
+      },
+      {
+        "name": "KeyValueList",
+        "implemented_in_host": null,
+        "note": "No file named KeyValueList. Contract-only."
+      },
+      {
+        "name": "ActionBar",
+        "implemented_in_host": null,
+        "note": "No file named ActionBar; AgentActionButtons is role-specific. Contract-only."
+      },
+      {
+        "name": "LogView",
+        "implemented_in_host": null,
+        "note": "No file named LogView. Contract-only."
+      },
+      {
+        "name": "JsonTree",
+        "implemented_in_host": null,
+        "note": "No file named JsonTree. Contract-only."
+      },
+      {
+        "name": "Spinner",
+        "implemented_in_host": null,
+        "note": "No file named Spinner. Contract-only."
+      },
+      {
+        "name": "ErrorBoundary",
+        "implemented_in_host": null,
+        "note": "No file named ErrorBoundary. Contract-only."
+      }
+    ]
+  },
+  "components": {
+    "CompanySettingsNav": {
+      "path": "ui/src/components/access/CompanySettingsNav.tsx",
+      "display_name": "CompanySettingsNav",
+      "category": "composite",
+      "imports_primitives": [
+        "tabs"
+      ],
+      "imports_composites": [
+        "PageTabBar"
+      ],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "ModeBadge": {
+      "path": "ui/src/components/access/ModeBadge.tsx",
+      "display_name": "ModeBadge",
+      "category": "composite",
+      "imports_primitives": [
+        "badge"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "InstanceGeneralSettings"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "AccountingModelCard": {
+      "path": "ui/src/components/AccountingModelCard.tsx",
+      "display_name": "AccountingModelCard",
+      "category": "composite",
+      "imports_primitives": [
+        "card"
+      ],
+      "imports_composites": [],
+      "usage_count": 0,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 0,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "storybook-only"
+    },
+    "ActiveAgentsPanel": {
+      "path": "ui/src/components/ActiveAgentsPanel.tsx",
+      "display_name": "ActiveAgentsPanel",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Dashboard"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ActivityCharts": {
+      "path": "ui/src/components/ActivityCharts.tsx",
+      "display_name": "ActivityCharts",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "AgentDetail",
+        "Dashboard"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "ActivityRow": {
+      "path": "ui/src/components/ActivityRow.tsx",
+      "display_name": "ActivityRow",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Activity",
+        "Dashboard"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "agent-config-defaults": {
+      "path": "ui/src/components/agent-config-defaults.ts",
+      "display_name": "agent-config-defaults",
+      "category": "utility-or-hook",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 5,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "CompanyImport",
+        "NewAgent"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "non-component"
+    },
+    "agent-config-primitives": {
+      "path": "ui/src/components/agent-config-primitives.tsx",
+      "display_name": "agent-config-primitives",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog",
+        "toggle-switch",
+        "tooltip"
+      ],
+      "imports_composites": [],
+      "usage_count": 19,
+      "used_in_pages_count": 4,
+      "used_in_components_count": 3,
+      "used_in_pages": [
+        "AgentDetail",
+        "CompanyImport",
+        "CompanySettings",
+        "NewAgent"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "AgentActionButtons": {
+      "path": "ui/src/components/AgentActionButtons.tsx",
+      "display_name": "AgentActionButtons",
+      "category": "composite",
+      "imports_primitives": [
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "AgentDetail",
+        "RoutineDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "AgentConfigForm": {
+      "path": "ui/src/components/AgentConfigForm.tsx",
+      "display_name": "AgentConfigForm",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 5,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "AgentDetail",
+        "CompanyImport",
+        "NewAgent"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "AgentIconPicker": {
+      "path": "ui/src/components/AgentIconPicker.tsx",
+      "display_name": "AgentIconPicker",
+      "category": "composite",
+      "imports_primitives": [
+        "input",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 13,
+      "used_in_pages_count": 4,
+      "used_in_components_count": 9,
+      "used_in_pages": [
+        "AgentDetail",
+        "OrgChart",
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "AgentProperties": {
+      "path": "ui/src/components/AgentProperties.tsx",
+      "display_name": "AgentProperties",
+      "category": "composite",
+      "imports_primitives": [
+        "separator"
+      ],
+      "imports_composites": [],
+      "usage_count": 0,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 0,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "storybook-only"
+    },
+    "ApprovalCard": {
+      "path": "ui/src/components/ApprovalCard.tsx",
+      "display_name": "ApprovalCard",
+      "category": "composite",
+      "imports_primitives": [
+        "badge",
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "Approvals",
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "ApprovalPayload": {
+      "path": "ui/src/components/ApprovalPayload.tsx",
+      "display_name": "ApprovalPayload",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 4,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "ApprovalDetail",
+        "Inbox"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "AsciiArtAnimation": {
+      "path": "ui/src/components/AsciiArtAnimation.tsx",
+      "display_name": "AsciiArtAnimation",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "Auth"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "BillerSpendCard": {
+      "path": "ui/src/components/BillerSpendCard.tsx",
+      "display_name": "BillerSpendCard",
+      "category": "composite",
+      "imports_primitives": [
+        "card"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Costs"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "BreadcrumbBar": {
+      "path": "ui/src/components/BreadcrumbBar.tsx",
+      "display_name": "BreadcrumbBar",
+      "category": "composite",
+      "imports_primitives": [
+        "breadcrumb",
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "BudgetIncidentCard": {
+      "path": "ui/src/components/BudgetIncidentCard.tsx",
+      "display_name": "BudgetIncidentCard",
+      "category": "composite",
+      "imports_primitives": [
+        "badge",
+        "button",
+        "card",
+        "input"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Costs"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "BudgetPolicyCard": {
+      "path": "ui/src/components/BudgetPolicyCard.tsx",
+      "display_name": "BudgetPolicyCard",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "card",
+        "input"
+      ],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "AgentDetail",
+        "Costs",
+        "ProjectDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "BudgetSidebarMarker": {
+      "path": "ui/src/components/BudgetSidebarMarker.tsx",
+      "display_name": "BudgetSidebarMarker",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ClaudeSubscriptionPanel": {
+      "path": "ui/src/components/ClaudeSubscriptionPanel.tsx",
+      "display_name": "ClaudeSubscriptionPanel",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "CloudAccessGate": {
+      "path": "ui/src/components/CloudAccessGate.tsx",
+      "display_name": "CloudAccessGate",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 0,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "CodexSubscriptionPanel": {
+      "path": "ui/src/components/CodexSubscriptionPanel.tsx",
+      "display_name": "CodexSubscriptionPanel",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "CommandPalette": {
+      "path": "ui/src/components/CommandPalette.tsx",
+      "display_name": "CommandPalette",
+      "category": "composite",
+      "imports_primitives": [
+        "command"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "CommentThread": {
+      "path": "ui/src/components/CommentThread.tsx",
+      "display_name": "CommentThread",
+      "category": "composite",
+      "imports_primitives": [
+        "avatar",
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "CompanyPatternIcon": {
+      "path": "ui/src/components/CompanyPatternIcon.tsx",
+      "display_name": "CompanyPatternIcon",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 4,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "CompanySettings",
+        "InviteLanding",
+        "InviteUxLab"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "CompanyRail": {
+      "path": "ui/src/components/CompanyRail.tsx",
+      "display_name": "CompanyRail",
+      "category": "composite",
+      "imports_primitives": [
+        "tooltip"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "CompanySettingsSidebar": {
+      "path": "ui/src/components/CompanySettingsSidebar.tsx",
+      "display_name": "CompanySettingsSidebar",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "CompanySwitcher": {
+      "path": "ui/src/components/CompanySwitcher.tsx",
+      "display_name": "CompanySwitcher",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dropdown-menu"
+      ],
+      "imports_composites": [],
+      "usage_count": 0,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 0,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "storybook-only"
+    },
+    "CopyText": {
+      "path": "ui/src/components/CopyText.tsx",
+      "display_name": "CopyText",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "AgentDetail",
+        "ExecutionWorkspaceDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "DevRestartBanner": {
+      "path": "ui/src/components/DevRestartBanner.tsx",
+      "display_name": "DevRestartBanner",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "DocumentDiffModal": {
+      "path": "ui/src/components/DocumentDiffModal.tsx",
+      "display_name": "DocumentDiffModal",
+      "category": "composite",
+      "imports_primitives": [
+        "dialog",
+        "select"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "EmptyState": {
+      "path": "ui/src/components/EmptyState.tsx",
+      "display_name": "EmptyState",
+      "category": "composite",
+      "imports_primitives": [
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 20,
+      "used_in_pages_count": 19,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "Activity",
+        "Agents",
+        "CompanyExport",
+        "CompanyImport",
+        "CompanySkills",
+        "Costs",
+        "Dashboard",
+        "DesignGuide",
+        "Goals",
+        "Inbox",
+        "InstanceSettings",
+        "Issues",
+        "MyIssues",
+        "Org",
+        "OrgChart",
+        "Projects",
+        "RoutineDetail",
+        "Routines",
+        "UserProfile"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "EntityRow": {
+      "path": "ui/src/components/EntityRow.tsx",
+      "display_name": "EntityRow",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 6,
+      "used_in_pages_count": 6,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "AgentDetail",
+        "Agents",
+        "DesignGuide",
+        "GoalDetail",
+        "MyIssues",
+        "Projects"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "EnvVarEditor": {
+      "path": "ui/src/components/EnvVarEditor.tsx",
+      "display_name": "EnvVarEditor",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ExecutionParticipantPicker": {
+      "path": "ui/src/components/ExecutionParticipantPicker.tsx",
+      "display_name": "ExecutionParticipantPicker",
+      "category": "composite",
+      "imports_primitives": [
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 0,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 0,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "storybook-only"
+    },
+    "ExecutionWorkspaceCloseDialog": {
+      "path": "ui/src/components/ExecutionWorkspaceCloseDialog.tsx",
+      "display_name": "ExecutionWorkspaceCloseDialog",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "ExecutionWorkspaceDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "FilterBar": {
+      "path": "ui/src/components/FilterBar.tsx",
+      "display_name": "FilterBar",
+      "category": "composite",
+      "imports_primitives": [
+        "badge",
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "DesignGuide"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "FinanceBillerCard": {
+      "path": "ui/src/components/FinanceBillerCard.tsx",
+      "display_name": "FinanceBillerCard",
+      "category": "composite",
+      "imports_primitives": [
+        "card"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Costs"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "FinanceKindCard": {
+      "path": "ui/src/components/FinanceKindCard.tsx",
+      "display_name": "FinanceKindCard",
+      "category": "composite",
+      "imports_primitives": [
+        "card"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Costs"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "FinanceTimelineCard": {
+      "path": "ui/src/components/FinanceTimelineCard.tsx",
+      "display_name": "FinanceTimelineCard",
+      "category": "composite",
+      "imports_primitives": [
+        "badge",
+        "card"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Costs"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "GoalProperties": {
+      "path": "ui/src/components/GoalProperties.tsx",
+      "display_name": "GoalProperties",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "popover",
+        "separator"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "GoalDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "GoalTree": {
+      "path": "ui/src/components/GoalTree.tsx",
+      "display_name": "GoalTree",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "GoalDetail",
+        "Goals"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "HermesIcon": {
+      "path": "ui/src/components/HermesIcon.tsx",
+      "display_name": "HermesIcon",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 0,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "Identity": {
+      "path": "ui/src/components/Identity.tsx",
+      "display_name": "Identity",
+      "category": "composite",
+      "imports_primitives": [
+        "avatar"
+      ],
+      "imports_composites": [],
+      "usage_count": 19,
+      "used_in_pages_count": 7,
+      "used_in_components_count": 12,
+      "used_in_pages": [
+        "AgentDetail",
+        "ApprovalDetail",
+        "Costs",
+        "Dashboard",
+        "DesignGuide",
+        "IssueDetail",
+        "RunTranscriptUxLab"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "ImageGalleryModal": {
+      "path": "ui/src/components/ImageGalleryModal.tsx",
+      "display_name": "ImageGalleryModal",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "InlineEditor": {
+      "path": "ui/src/components/InlineEditor.tsx",
+      "display_name": "InlineEditor",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 6,
+      "used_in_pages_count": 4,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "DesignGuide",
+        "GoalDetail",
+        "IssueDetail",
+        "ProjectDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "InlineEntitySelector": {
+      "path": "ui/src/components/InlineEntitySelector.tsx",
+      "display_name": "InlineEntitySelector",
+      "category": "composite",
+      "imports_primitives": [
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 8,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 4,
+      "used_in_pages": [
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "InstanceSidebar": {
+      "path": "ui/src/components/InstanceSidebar.tsx",
+      "display_name": "InstanceSidebar",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "IssueChatThread": {
+      "path": "ui/src/components/IssueChatThread.tsx",
+      "display_name": "IssueChatThread",
+      "category": "composite",
+      "imports_primitives": [
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "popover",
+        "textarea",
+        "tooltip"
+      ],
+      "imports_composites": [],
+      "usage_count": 4,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "IssueChatUxLab",
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "IssueColumns": {
+      "path": "ui/src/components/IssueColumns.tsx",
+      "display_name": "IssueColumns",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dropdown-menu",
+        "tooltip"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "Inbox"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "IssueContinuationHandoff": {
+      "path": "ui/src/components/IssueContinuationHandoff.tsx",
+      "display_name": "IssueContinuationHandoff",
+      "category": "composite",
+      "imports_primitives": [
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "IssueDocumentsSection": {
+      "path": "ui/src/components/IssueDocumentsSection.tsx",
+      "display_name": "IssueDocumentsSection",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dropdown-menu",
+        "input"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "IssueFiltersPopover": {
+      "path": "ui/src/components/IssueFiltersPopover.tsx",
+      "display_name": "IssueFiltersPopover",
+      "category": "composite",
+      "imports_primitives": [
+        "badge",
+        "button",
+        "checkbox",
+        "input",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "Inbox"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "IssueGroupHeader": {
+      "path": "ui/src/components/IssueGroupHeader.tsx",
+      "display_name": "IssueGroupHeader",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "Inbox"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "IssueLinkQuicklook": {
+      "path": "ui/src/components/IssueLinkQuicklook.tsx",
+      "display_name": "IssueLinkQuicklook",
+      "category": "composite",
+      "imports_primitives": [
+        "popover"
+      ],
+      "imports_composites": [
+        "StatusIcon"
+      ],
+      "usage_count": 3,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "IssueProperties": {
+      "path": "ui/src/components/IssueProperties.tsx",
+      "display_name": "IssueProperties",
+      "category": "composite",
+      "imports_primitives": [
+        "popover",
+        "separator"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "IssueReferenceActivitySummary": {
+      "path": "ui/src/components/IssueReferenceActivitySummary.tsx",
+      "display_name": "IssueReferenceActivitySummary",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "IssueReferencePill": {
+      "path": "ui/src/components/IssueReferencePill.tsx",
+      "display_name": "IssueReferencePill",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 4,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 3,
+      "used_in_pages": [
+        "DesignGuide"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "IssueRelatedWorkPanel": {
+      "path": "ui/src/components/IssueRelatedWorkPanel.tsx",
+      "display_name": "IssueRelatedWorkPanel",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "IssueRow": {
+      "path": "ui/src/components/IssueRow.tsx",
+      "display_name": "IssueRow",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "Inbox"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "IssueRunLedger": {
+      "path": "ui/src/components/IssueRunLedger.tsx",
+      "display_name": "IssueRunLedger",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "IssuesList": {
+      "path": "ui/src/components/IssuesList.tsx",
+      "display_name": "IssuesList",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "collapsible",
+        "input",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 6,
+      "used_in_pages_count": 5,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "ExecutionWorkspaceDetail",
+        "IssueDetail",
+        "Issues",
+        "ProjectDetail",
+        "Routines"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "IssuesQuicklook": {
+      "path": "ui/src/components/IssuesQuicklook.tsx",
+      "display_name": "IssuesQuicklook",
+      "category": "composite",
+      "imports_primitives": [
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "IssueWorkspaceCard": {
+      "path": "ui/src/components/IssueWorkspaceCard.tsx",
+      "display_name": "IssueWorkspaceCard",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "skeleton"
+      ],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "JsonSchemaForm": {
+      "path": "ui/src/components/JsonSchemaForm.tsx",
+      "display_name": "JsonSchemaForm",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "checkbox",
+        "input",
+        "label",
+        "select",
+        "textarea"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "PluginSettings"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "KanbanBoard": {
+      "path": "ui/src/components/KanbanBoard.tsx",
+      "display_name": "KanbanBoard",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "KeyboardShortcutsCheatsheet": {
+      "path": "ui/src/components/KeyboardShortcutsCheatsheet.tsx",
+      "display_name": "KeyboardShortcutsCheatsheet",
+      "category": "composite",
+      "imports_primitives": [
+        "dialog"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "Layout": {
+      "path": "ui/src/components/Layout.tsx",
+      "display_name": "Layout",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "LiveRunWidget": {
+      "path": "ui/src/components/LiveRunWidget.tsx",
+      "display_name": "LiveRunWidget",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "RoutineDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "MarkdownBody": {
+      "path": "ui/src/components/MarkdownBody.tsx",
+      "display_name": "MarkdownBody",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 11,
+      "used_in_pages_count": 5,
+      "used_in_components_count": 6,
+      "used_in_pages": [
+        "AgentDetail",
+        "ApprovalDetail",
+        "CompanyExport",
+        "CompanyImport",
+        "CompanySkills"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "MarkdownEditor": {
+      "path": "ui/src/components/MarkdownEditor.tsx",
+      "display_name": "MarkdownEditor",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 16,
+      "used_in_pages_count": 5,
+      "used_in_components_count": 9,
+      "used_in_pages": [
+        "AgentDetail",
+        "CompanySkills",
+        "IssueDetail",
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "MetricCard": {
+      "path": "ui/src/components/MetricCard.tsx",
+      "display_name": "MetricCard",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Dashboard",
+        "DesignGuide"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "MobileBottomNav": {
+      "path": "ui/src/components/MobileBottomNav.tsx",
+      "display_name": "MobileBottomNav",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "NewAgentDialog": {
+      "path": "ui/src/components/NewAgentDialog.tsx",
+      "display_name": "NewAgentDialog",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "NewGoalDialog": {
+      "path": "ui/src/components/NewGoalDialog.tsx",
+      "display_name": "NewGoalDialog",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "NewIssueDialog": {
+      "path": "ui/src/components/NewIssueDialog.tsx",
+      "display_name": "NewIssueDialog",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog",
+        "popover",
+        "toggle-switch"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "NewProjectDialog": {
+      "path": "ui/src/components/NewProjectDialog.tsx",
+      "display_name": "NewProjectDialog",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog",
+        "popover",
+        "tooltip"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "OnboardingWizard": {
+      "path": "ui/src/components/OnboardingWizard.tsx",
+      "display_name": "OnboardingWizard",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 0,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "OpenCodeLogoIcon": {
+      "path": "ui/src/components/OpenCodeLogoIcon.tsx",
+      "display_name": "OpenCodeLogoIcon",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "OutputFeedbackButtons": {
+      "path": "ui/src/components/OutputFeedbackButtons.tsx",
+      "display_name": "OutputFeedbackButtons",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog",
+        "textarea"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "PackageFileTree": {
+      "path": "ui/src/components/PackageFileTree.tsx",
+      "display_name": "PackageFileTree",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "AgentDetail",
+        "CompanyExport",
+        "CompanyImport"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "PageSkeleton": {
+      "path": "ui/src/components/PageSkeleton.tsx",
+      "display_name": "PageSkeleton",
+      "category": "composite",
+      "imports_primitives": [
+        "skeleton"
+      ],
+      "imports_composites": [],
+      "usage_count": 23,
+      "used_in_pages_count": 22,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "Activity",
+        "AgentDetail",
+        "Agents",
+        "ApprovalDetail",
+        "Approvals",
+        "CompanyExport",
+        "CompanySkills",
+        "Costs",
+        "Dashboard",
+        "DesignGuide",
+        "GoalDetail",
+        "Goals",
+        "Inbox",
+        "MyIssues",
+        "Org",
+        "OrgChart",
+        "ProjectDetail",
+        "Projects",
+        "RoutineDetail",
+        "Routines",
+        "UserProfile",
+        "Workspaces"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "PageTabBar": {
+      "path": "ui/src/components/PageTabBar.tsx",
+      "display_name": "PageTabBar",
+      "category": "composite",
+      "imports_primitives": [
+        "tabs"
+      ],
+      "imports_composites": [],
+      "usage_count": 10,
+      "used_in_pages_count": 9,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "AgentDetail",
+        "Agents",
+        "Approvals",
+        "Costs",
+        "ExecutionWorkspaceDetail",
+        "Inbox",
+        "PluginSettings",
+        "ProjectDetail",
+        "Routines"
+      ],
+      "used_in_components": [
+        "CompanySettingsNav"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "PathInstructionsModal": {
+      "path": "ui/src/components/PathInstructionsModal.tsx",
+      "display_name": "PathInstructionsModal",
+      "category": "composite",
+      "imports_primitives": [
+        "dialog"
+      ],
+      "imports_composites": [],
+      "usage_count": 12,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 3,
+      "used_in_pages": [
+        "AdapterManager",
+        "ProjectWorkspaceDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "PriorityIcon": {
+      "path": "ui/src/components/PriorityIcon.tsx",
+      "display_name": "PriorityIcon",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 5,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 3,
+      "used_in_pages": [
+        "DesignGuide",
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "ProjectProperties": {
+      "path": "ui/src/components/ProjectProperties.tsx",
+      "display_name": "ProjectProperties",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "popover",
+        "separator",
+        "toggle-switch",
+        "tooltip"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "ProjectDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ProjectWorkspacesContent": {
+      "path": "ui/src/components/ProjectWorkspacesContent.tsx",
+      "display_name": "ProjectWorkspacesContent",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "ProjectDetail",
+        "Workspaces"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ProjectWorkspaceSummaryCard": {
+      "path": "ui/src/components/ProjectWorkspaceSummaryCard.tsx",
+      "display_name": "ProjectWorkspaceSummaryCard",
+      "category": "composite",
+      "imports_primitives": [
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "PropertiesPanel": {
+      "path": "ui/src/components/PropertiesPanel.tsx",
+      "display_name": "PropertiesPanel",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "scroll-area"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "ProviderQuotaCard": {
+      "path": "ui/src/components/ProviderQuotaCard.tsx",
+      "display_name": "ProviderQuotaCard",
+      "category": "composite",
+      "imports_primitives": [
+        "card",
+        "skeleton"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "Costs"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "QuotaBar": {
+      "path": "ui/src/components/QuotaBar.tsx",
+      "display_name": "QuotaBar",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ReportsToPicker": {
+      "path": "ui/src/components/ReportsToPicker.tsx",
+      "display_name": "ReportsToPicker",
+      "category": "composite",
+      "imports_primitives": [
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "NewAgent"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "RoutineRunVariablesDialog": {
+      "path": "ui/src/components/RoutineRunVariablesDialog.tsx",
+      "display_name": "RoutineRunVariablesDialog",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dialog",
+        "input",
+        "label",
+        "select",
+        "textarea"
+      ],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "RoutineVariablesEditor": {
+      "path": "ui/src/components/RoutineVariablesEditor.tsx",
+      "display_name": "RoutineVariablesEditor",
+      "category": "composite",
+      "imports_primitives": [
+        "badge",
+        "collapsible",
+        "input",
+        "label",
+        "select",
+        "textarea"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "RunChatSurface": {
+      "path": "ui/src/components/RunChatSurface.tsx",
+      "display_name": "RunChatSurface",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ScheduleEditor": {
+      "path": "ui/src/components/ScheduleEditor.tsx",
+      "display_name": "ScheduleEditor",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "input",
+        "select"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "RoutineDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ScrollToBottom": {
+      "path": "ui/src/components/ScrollToBottom.tsx",
+      "display_name": "ScrollToBottom",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "AgentDetail",
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "Sidebar": {
+      "path": "ui/src/components/Sidebar.tsx",
+      "display_name": "Sidebar",
+      "category": "composite",
+      "imports_primitives": [
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "SidebarAccountMenu": {
+      "path": "ui/src/components/SidebarAccountMenu.tsx",
+      "display_name": "SidebarAccountMenu",
+      "category": "composite",
+      "imports_primitives": [
+        "avatar",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "SidebarAgents": {
+      "path": "ui/src/components/SidebarAgents.tsx",
+      "display_name": "SidebarAgents",
+      "category": "composite",
+      "imports_primitives": [
+        "collapsible"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "SidebarCompanyMenu": {
+      "path": "ui/src/components/SidebarCompanyMenu.tsx",
+      "display_name": "SidebarCompanyMenu",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "dropdown-menu"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 2,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "SidebarNavItem": {
+      "path": "ui/src/components/SidebarNavItem.tsx",
+      "display_name": "SidebarNavItem",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 3,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "SidebarProjects": {
+      "path": "ui/src/components/SidebarProjects.tsx",
+      "display_name": "SidebarProjects",
+      "category": "composite",
+      "imports_primitives": [
+        "collapsible"
+      ],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "SidebarSection": {
+      "path": "ui/src/components/SidebarSection.tsx",
+      "display_name": "SidebarSection",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "StatusBadge": {
+      "path": "ui/src/components/StatusBadge.tsx",
+      "display_name": "StatusBadge",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 19,
+      "used_in_pages_count": 12,
+      "used_in_components_count": 7,
+      "used_in_pages": [
+        "AgentDetail",
+        "Agents",
+        "ApprovalDetail",
+        "Costs",
+        "DesignGuide",
+        "GoalDetail",
+        "Inbox",
+        "Org",
+        "ProjectDetail",
+        "Projects",
+        "RunTranscriptUxLab",
+        "UserProfile"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "StatusIcon": {
+      "path": "ui/src/components/StatusIcon.tsx",
+      "display_name": "StatusIcon",
+      "category": "composite",
+      "imports_primitives": [
+        "button",
+        "popover"
+      ],
+      "imports_composites": [],
+      "usage_count": 14,
+      "used_in_pages_count": 5,
+      "used_in_components_count": 9,
+      "used_in_pages": [
+        "Dashboard",
+        "DesignGuide",
+        "Inbox",
+        "IssueDetail",
+        "MyIssues"
+      ],
+      "used_in_components": [
+        "IssueLinkQuicklook"
+      ],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "SwipeToArchive": {
+      "path": "ui/src/components/SwipeToArchive.tsx",
+      "display_name": "SwipeToArchive",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "Inbox"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "ToastViewport": {
+      "path": "ui/src/components/ToastViewport.tsx",
+      "display_name": "ToastViewport",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "RunTranscriptView": {
+      "path": "ui/src/components/transcript/RunTranscriptView.tsx",
+      "display_name": "RunTranscriptView",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "AgentDetail",
+        "RunTranscriptUxLab"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "useLiveRunTranscripts": {
+      "path": "ui/src/components/transcript/useLiveRunTranscripts.ts",
+      "display_name": "useLiveRunTranscripts",
+      "category": "utility-or-hook",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 5,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 4,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "non-component"
+    },
+    "avatar": {
+      "path": "ui/src/components/ui/avatar.tsx",
+      "display_name": "Avatar",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 7,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 4,
+      "used_in_pages": [
+        "DesignGuide",
+        "ProfileSettings",
+        "UserProfile"
+      ],
+      "used_in_components": [
+        "CommentThread",
+        "Identity",
+        "IssueChatThread",
+        "SidebarAccountMenu"
+      ],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "badge": {
+      "path": "ui/src/components/ui/badge.tsx",
+      "display_name": "Badge",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 18,
+      "used_in_pages_count": 11,
+      "used_in_components_count": 7,
+      "used_in_pages": [
+        "AdapterManager",
+        "CompanyAccess",
+        "DesignGuide",
+        "InstanceSettings",
+        "InviteUxLab",
+        "IssueChatUxLab",
+        "JoinRequestQueue",
+        "PluginManager",
+        "PluginSettings",
+        "RoutineDetail",
+        "RunTranscriptUxLab"
+      ],
+      "used_in_components": [
+        "ApprovalCard",
+        "BudgetIncidentCard",
+        "FilterBar",
+        "FinanceTimelineCard",
+        "IssueFiltersPopover",
+        "ModeBadge",
+        "RoutineVariablesEditor"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "breadcrumb": {
+      "path": "ui/src/components/ui/breadcrumb.tsx",
+      "display_name": "Breadcrumb",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "DesignGuide"
+      ],
+      "used_in_components": [
+        "BreadcrumbBar"
+      ],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "button": {
+      "path": "ui/src/components/ui/button.tsx",
+      "display_name": "Button",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 81,
+      "used_in_pages_count": 41,
+      "used_in_components_count": 38,
+      "used_in_pages": [
+        "AdapterManager",
+        "AgentDetail",
+        "Agents",
+        "ApprovalDetail",
+        "Auth",
+        "BoardClaim",
+        "CliAuth",
+        "Companies",
+        "CompanyAccess",
+        "CompanyExport",
+        "CompanyImport",
+        "CompanyInvites",
+        "CompanySettings",
+        "CompanySkills",
+        "Costs",
+        "DesignGuide",
+        "ExecutionWorkspaceDetail",
+        "GoalDetail",
+        "Goals",
+        "Inbox",
+        "InstanceAccess",
+        "InstanceGeneralSettings",
+        "InstanceSettings",
+        "InviteLanding",
+        "InviteUxLab",
+        "IssueChatUxLab",
+        "IssueDetail",
+        "JoinRequestQueue",
+        "NewAgent",
+        "NotFound",
+        "OrgChart",
+        "PluginManager",
+        "PluginPage",
+        "PluginSettings",
+        "ProfileSettings",
+        "ProjectDetail",
+        "ProjectWorkspaceDetail",
+        "Projects",
+        "RoutineDetail",
+        "Routines",
+        "RunTranscriptUxLab"
+      ],
+      "used_in_components": [
+        "AgentActionButtons",
+        "AgentConfigForm",
+        "ApprovalCard",
+        "BreadcrumbBar",
+        "BudgetIncidentCard",
+        "BudgetPolicyCard",
+        "CommentThread",
+        "CompanySwitcher",
+        "EmptyState",
+        "FilterBar",
+        "GoalProperties",
+        "IssueChatThread",
+        "IssueColumns",
+        "IssueContinuationHandoff",
+        "IssueDocumentsSection",
+        "IssueFiltersPopover",
+        "IssueWorkspaceCard",
+        "IssuesList",
+        "JsonSchemaForm",
+        "NewAgentDialog",
+        "NewGoalDialog",
+        "NewIssueDialog",
+        "NewProjectDialog",
+        "OnboardingWizard",
+        "OutputFeedbackButtons",
+        "PriorityIcon",
+        "ProjectProperties",
+        "ProjectWorkspaceSummaryCard",
+        "PropertiesPanel",
+        "RoutineRunVariablesDialog",
+        "ScheduleEditor",
+        "Sidebar",
+        "SidebarCompanyMenu",
+        "StatusIcon",
+        "WorkspaceRuntimeControls",
+        "agent-config-primitives",
+        "dialog"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "card": {
+      "path": "ui/src/components/ui/card.tsx",
+      "display_name": "Card",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 18,
+      "used_in_pages_count": 10,
+      "used_in_components_count": 8,
+      "used_in_pages": [
+        "AdapterManager",
+        "Costs",
+        "DesignGuide",
+        "ExecutionWorkspaceDetail",
+        "InstanceSettings",
+        "InviteUxLab",
+        "IssueChatUxLab",
+        "PluginManager",
+        "PluginSettings",
+        "Routines"
+      ],
+      "used_in_components": [
+        "AccountingModelCard",
+        "BillerSpendCard",
+        "BudgetIncidentCard",
+        "BudgetPolicyCard",
+        "FinanceBillerCard",
+        "FinanceKindCard",
+        "FinanceTimelineCard",
+        "ProviderQuotaCard"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "checkbox": {
+      "path": "ui/src/components/ui/checkbox.tsx",
+      "display_name": "Checkbox",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 6,
+      "used_in_pages_count": 4,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "CompanyAccess",
+        "DesignGuide",
+        "InstanceAccess",
+        "NewAgent"
+      ],
+      "used_in_components": [
+        "IssueFiltersPopover",
+        "JsonSchemaForm"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "collapsible": {
+      "path": "ui/src/components/ui/collapsible.tsx",
+      "display_name": "Collapsible",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 8,
+      "used_in_pages_count": 4,
+      "used_in_components_count": 4,
+      "used_in_pages": [
+        "AgentDetail",
+        "DesignGuide",
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [
+        "IssuesList",
+        "RoutineVariablesEditor",
+        "SidebarAgents",
+        "SidebarProjects"
+      ],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "command": {
+      "path": "ui/src/components/ui/command.tsx",
+      "display_name": "Command",
+      "category": "primitive",
+      "imports_primitives": [
+        "dialog"
+      ],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 1,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "DesignGuide"
+      ],
+      "used_in_components": [
+        "CommandPalette"
+      ],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    },
+    "dialog": {
+      "path": "ui/src/components/ui/dialog.tsx",
+      "display_name": "Dialog",
+      "category": "primitive",
+      "imports_primitives": [
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 21,
+      "used_in_pages_count": 7,
+      "used_in_components_count": 14,
+      "used_in_pages": [
+        "AdapterManager",
+        "CompanyAccess",
+        "CompanySkills",
+        "DesignGuide",
+        "Inbox",
+        "PluginManager",
+        "Routines"
+      ],
+      "used_in_components": [
+        "DocumentDiffModal",
+        "IssueChatThread",
+        "KeyboardShortcutsCheatsheet",
+        "NewAgentDialog",
+        "NewGoalDialog",
+        "NewIssueDialog",
+        "NewProjectDialog",
+        "OnboardingWizard",
+        "OutputFeedbackButtons",
+        "PathInstructionsModal",
+        "RoutineRunVariablesDialog",
+        "agent-config-primitives",
+        "command"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "dropdown-menu": {
+      "path": "ui/src/components/ui/dropdown-menu.tsx",
+      "display_name": "DropdownMenu",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 8,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 5,
+      "used_in_pages": [
+        "Companies",
+        "DesignGuide",
+        "Routines"
+      ],
+      "used_in_components": [
+        "CompanySwitcher",
+        "IssueChatThread",
+        "IssueColumns",
+        "IssueDocumentsSection",
+        "SidebarCompanyMenu"
+      ],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "input": {
+      "path": "ui/src/components/ui/input.tsx",
+      "display_name": "Input",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 20,
+      "used_in_pages_count": 10,
+      "used_in_components_count": 10,
+      "used_in_pages": [
+        "AdapterManager",
+        "AgentDetail",
+        "Companies",
+        "CompanySkills",
+        "DesignGuide",
+        "ExecutionWorkspaceDetail",
+        "Inbox",
+        "PluginManager",
+        "ProfileSettings",
+        "RoutineDetail"
+      ],
+      "used_in_components": [
+        "AgentIconPicker",
+        "BudgetIncidentCard",
+        "BudgetPolicyCard",
+        "IssueDocumentsSection",
+        "IssueFiltersPopover",
+        "IssuesList",
+        "JsonSchemaForm",
+        "RoutineRunVariablesDialog",
+        "RoutineVariablesEditor",
+        "ScheduleEditor"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "label": {
+      "path": "ui/src/components/ui/label.tsx",
+      "display_name": "Label",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 8,
+      "used_in_pages_count": 5,
+      "used_in_components_count": 3,
+      "used_in_pages": [
+        "AdapterManager",
+        "DesignGuide",
+        "PluginManager",
+        "ProfileSettings",
+        "RoutineDetail"
+      ],
+      "used_in_components": [
+        "JsonSchemaForm",
+        "RoutineRunVariablesDialog",
+        "RoutineVariablesEditor"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "popover": {
+      "path": "ui/src/components/ui/popover.tsx",
+      "display_name": "Popover",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 27,
+      "used_in_pages_count": 6,
+      "used_in_components_count": 20,
+      "used_in_pages": [
+        "AgentDetail",
+        "DesignGuide",
+        "Inbox",
+        "IssueDetail",
+        "NewAgent",
+        "Routines"
+      ],
+      "used_in_components": [
+        "AgentConfigForm",
+        "AgentIconPicker",
+        "ExecutionParticipantPicker",
+        "GoalProperties",
+        "InlineEntitySelector",
+        "IssueChatThread",
+        "IssueFiltersPopover",
+        "IssueLinkQuicklook",
+        "IssueProperties",
+        "IssuesList",
+        "IssuesQuicklook",
+        "NewGoalDialog",
+        "NewIssueDialog",
+        "NewProjectDialog",
+        "OnboardingWizard",
+        "PriorityIcon",
+        "ProjectProperties",
+        "ReportsToPicker",
+        "SidebarAccountMenu",
+        "StatusIcon"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "scroll-area": {
+      "path": "ui/src/components/ui/scroll-area.tsx",
+      "display_name": "ScrollArea",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "DesignGuide",
+        "IssueDetail"
+      ],
+      "used_in_components": [
+        "PropertiesPanel"
+      ],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "select": {
+      "path": "ui/src/components/ui/select.tsx",
+      "display_name": "Select",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 10,
+      "used_in_pages_count": 5,
+      "used_in_components_count": 5,
+      "used_in_pages": [
+        "Activity",
+        "DesignGuide",
+        "Inbox",
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [
+        "DocumentDiffModal",
+        "JsonSchemaForm",
+        "RoutineRunVariablesDialog",
+        "RoutineVariablesEditor",
+        "ScheduleEditor"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "separator": {
+      "path": "ui/src/components/ui/separator.tsx",
+      "display_name": "Separator",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 11,
+      "used_in_pages_count": 7,
+      "used_in_components_count": 4,
+      "used_in_pages": [
+        "DesignGuide",
+        "ExecutionWorkspaceDetail",
+        "Inbox",
+        "IssueDetail",
+        "PluginSettings",
+        "ProjectWorkspaceDetail",
+        "RoutineDetail"
+      ],
+      "used_in_components": [
+        "AgentProperties",
+        "GoalProperties",
+        "IssueProperties",
+        "ProjectProperties"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "sheet": {
+      "path": "ui/src/components/ui/sheet.tsx",
+      "display_name": "Sheet",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 2,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 0,
+      "used_in_pages": [
+        "DesignGuide",
+        "IssueDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": false,
+      "status": "below-threshold"
+    },
+    "skeleton": {
+      "path": "ui/src/components/ui/skeleton.tsx",
+      "display_name": "Skeleton",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 6,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 3,
+      "used_in_pages": [
+        "AgentDetail",
+        "DesignGuide",
+        "IssueDetail"
+      ],
+      "used_in_components": [
+        "IssueWorkspaceCard",
+        "PageSkeleton",
+        "ProviderQuotaCard"
+      ],
+      "covered_by_story": false,
+      "status": "documented"
+    },
+    "tabs": {
+      "path": "ui/src/components/ui/tabs.tsx",
+      "display_name": "Tabs",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 15,
+      "used_in_pages_count": 13,
+      "used_in_components_count": 2,
+      "used_in_pages": [
+        "AgentDetail",
+        "Agents",
+        "Approvals",
+        "Costs",
+        "DesignGuide",
+        "ExecutionWorkspaceDetail",
+        "GoalDetail",
+        "Inbox",
+        "IssueDetail",
+        "PluginSettings",
+        "ProjectDetail",
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [
+        "CompanySettingsNav",
+        "PageTabBar"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "textarea": {
+      "path": "ui/src/components/ui/textarea.tsx",
+      "display_name": "Textarea",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 9,
+      "used_in_pages_count": 4,
+      "used_in_components_count": 5,
+      "used_in_pages": [
+        "ApprovalDetail",
+        "CompanySkills",
+        "DesignGuide",
+        "ExecutionWorkspaceDetail"
+      ],
+      "used_in_components": [
+        "IssueChatThread",
+        "JsonSchemaForm",
+        "OutputFeedbackButtons",
+        "RoutineRunVariablesDialog",
+        "RoutineVariablesEditor"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "toggle-switch": {
+      "path": "ui/src/components/ui/toggle-switch.tsx",
+      "display_name": "ToggleSwitch",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 8,
+      "used_in_pages_count": 5,
+      "used_in_components_count": 3,
+      "used_in_pages": [
+        "AgentDetail",
+        "InstanceExperimentalSettings",
+        "InstanceGeneralSettings",
+        "RoutineDetail",
+        "Routines"
+      ],
+      "used_in_components": [
+        "NewIssueDialog",
+        "ProjectProperties",
+        "agent-config-primitives"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "tooltip": {
+      "path": "ui/src/components/ui/tooltip.tsx",
+      "display_name": "Tooltip",
+      "category": "primitive",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 11,
+      "used_in_pages_count": 3,
+      "used_in_components_count": 7,
+      "used_in_pages": [
+        "AgentDetail",
+        "CompanySkills",
+        "DesignGuide"
+      ],
+      "used_in_components": [
+        "CompanyRail",
+        "IssueChatThread",
+        "IssueColumns",
+        "NewProjectDialog",
+        "ProjectProperties",
+        "agent-config-primitives"
+      ],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "WorkspaceRuntimeControls": {
+      "path": "ui/src/components/WorkspaceRuntimeControls.tsx",
+      "display_name": "WorkspaceRuntimeControls",
+      "category": "composite",
+      "imports_primitives": [
+        "button"
+      ],
+      "imports_composites": [],
+      "usage_count": 3,
+      "used_in_pages_count": 2,
+      "used_in_components_count": 1,
+      "used_in_pages": [
+        "ExecutionWorkspaceDetail",
+        "ProjectWorkspaceDetail"
+      ],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "documented"
+    },
+    "WorktreeBanner": {
+      "path": "ui/src/components/WorktreeBanner.tsx",
+      "display_name": "WorktreeBanner",
+      "category": "standalone",
+      "imports_primitives": [],
+      "imports_composites": [],
+      "usage_count": 1,
+      "used_in_pages_count": 0,
+      "used_in_components_count": 1,
+      "used_in_pages": [],
+      "used_in_components": [],
+      "covered_by_story": true,
+      "status": "below-threshold"
+    }
+  }
+}
