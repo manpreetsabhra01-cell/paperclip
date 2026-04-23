@@ -77,12 +77,7 @@ What this redesign does not touch:
 - **Sharp corners** (`rounded-none`) for dashboard surfaces. `rounded-lg` (0.625rem) and `rounded-xl` (0.75rem) are available for opt-in rounded surfaces if genuinely warranted (e.g., a chat-like element), but the dashboard aesthetic is sharp.
 - **`--signal-success` / `--signal-success-foreground`** for approve/confirm actions if they appear.
 - **`destructive` / `destructive-foreground`** is reserved for terminate/reject — but those are out of scope for the dashboard, so this is unlikely to apply.
-- **Pause-agent uses neutral button styling** (default outline/ghost button treatment). See known deferrals below.
 - **`status-colors.ts`** is the source of truth for entity state colors. Use as-is.
-
-## Known deferrals
-
-Pause-agent ideally would use an amber/caution visual treatment. `--signal-warning` was deferred in Step 0 and stays deferred. Both runs use neutral button styling for pause. **If both runs independently flag that pause wanted amber treatment, that's strong signal to add `--signal-warning` as a Step 0 amendment post-experiment.** This gap is a legitimate DS finding, not a problem to solve mid-experiment.
 
 ## Deliverables
 
