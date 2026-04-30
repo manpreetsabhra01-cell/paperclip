@@ -252,7 +252,7 @@ export function verifyPackageRegistryState({
 
     if (latestVersion && isCanaryVersion(latestVersion) && !allowCanaryLatest) {
       problems.push(
-        `${packageName}: latest dist-tag still resolves to canary ${latestVersion}; rerun with --allow-canary-latest only when that state is intentional`,
+        `${packageName}: latest dist-tag still resolves to canary ${latestVersion}; if that state is intentional, rerun the verification script directly with --allow-canary-latest`,
       );
     }
 
